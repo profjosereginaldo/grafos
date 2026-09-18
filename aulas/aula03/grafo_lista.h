@@ -13,5 +13,7 @@ typedef struct {
 
 GrafoLista *criar_grafo(int n);
 void adicionar_aresta(GrafoLista *g, int u, int v);
+void adicionar_arco(GrafoLista *g, int u, int v);
+void imprimir_grafo(GrafoLista *g);
 
 #endif

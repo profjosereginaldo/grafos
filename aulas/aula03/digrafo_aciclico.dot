@@ -1,0 +1,11 @@
+digraph G {
+   A [shape="circle"]
+   B [shape="circle"]
+   C [shape="circle"]
+   D [shape="circle"]
+   A -> B
+   A -> C
+   B -> D
+   C -> D
+ 
+}
