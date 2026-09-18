@@ -12,11 +12,11 @@ int main()
     adicionar_aresta(grafo, 1, 3);
     adicionar_aresta(grafo, 2, 3);
     adicionar_aresta(grafo, 3, 4);
- 
+
     printf("Grafo nao orientado\n");
     imprimir_grafo(grafo);
 
-    int visitado[10];
+    int visitado[MAX_VERTICES];
     memset(visitado, 0, sizeof(visitado));
     printf("Inicia dfs pelo vertice 1\n");
     dfs(grafo, 0, visitado);
@@ -34,8 +34,8 @@ int main()
     adicionar_arco(digrafo, 1, 3);
     adicionar_arco(digrafo, 2, 3);
 
-   printf("Grafo orientado (Digrafo)\n");
-   imprimir_grafo(digrafo);
- 
+    printf("Grafo orientado (Digrafo)\n");
+    imprimir_grafo(digrafo);
+
     return 0;
 }
