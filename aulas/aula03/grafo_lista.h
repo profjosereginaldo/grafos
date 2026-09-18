@@ -1,12 +1,16 @@
 #ifndef GRAFO_LISTA
 #define GRAFO_LISTA
 
-typedef struct No {
+#define MAX_VERTICES 100
+
+typedef struct No
+{
     int vertice;
     struct No *proximo;
 } No;
 
-typedef struct {
+typedef struct
+{
     No **lista;
     int num_vertices;
 } GrafoLista;

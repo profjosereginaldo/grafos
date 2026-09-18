@@ -41,7 +41,8 @@ void adicionar_arco(GrafoLista *g, int u, int v)
     g->lista[u] = no;
 }
 
-void imprimir_grafo(GrafoLista *g) {
+void imprimir_grafo(GrafoLista *g)
+{
     printf("\n");
     for (int i = 0; i < g->num_vertices; i++)
     {
