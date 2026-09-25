@@ -51,8 +51,16 @@ jobs:
             fi
             
             echo "   Compilando..."
-              
-            if gcc -Wall -Wextra -Werror -std=c11 "$PASTA/*.c" -o "$PASTA/main" -lm 2>&1; then
+
+            EXTRAS=""
+
+            case "$PASTA_NOME" in
+              pratica03|pratica04|pratica05)
+                EXTRAS="./praticas/pratica01/grafo_lista.c"
+                ;;
+            esac
+
+            if gcc -Wall -Wextra -Werror -std=c11 "$PASTA"*.c $EXTRAS -o "$PASTA"main -lm 2>&1; then
               echo "   ✅ SUCESSO"
               SUCESSOS=$((SUCESSOS + 1))
             else
