@@ -1,0 +1,9 @@
+graph G {
+   A [shape="circle"];
+   B [shape="circle", color="red"];
+   C [shape="circle", color="blue"]; 
+   D [shape="circle"];
+   A -- B [color="red"]
+   B -- C [color="red"]
+   C -- D [color="blue"]
+}
